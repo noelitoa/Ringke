@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{max-width:1024px; width:100%; margin:0 auto;}
+
+h1, h2, h3, h4, h5, h6, a, p { font-family: 'arial'; }
+
+header {
+	height:45px;
+	background:#000;
+	width:1024px;
+}
+
+body{
+	background-color:#b4dcd4;
+
+	}
+
+#logo{
+	margin-left:100px;
+	width:25%;
+	float:left;
+	width:1024px;
+	margin-top:10px;	
+	
+		}
+		
+nav{
+	width:75%;
+	float:right;	
+	margin-top:10px;
+			}
+
+nav ul li{
+		list-style:none;
+	display:inline-block;
+	float:right;
+	padding-right:50px;
+	}
+	
+nav ul li a{
+		color:#fff;
+		text-decoration:none;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:10px;
+        padding-right:1px;
+		padding-left:1px;
+		
+		}
+		
+nav ul li a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+.sel {
+color: #d15454;
+}
+
+/* selected link 
+nav ul li a:active {
+    color: blue;
+}
+*/
+
+#con{
+	padding-right:140px;
+	}
+		
+#content {
+    text-align:center;
+	margin-top:38px;
+}
+#left {
+    width:33%;
+    float:left;
+	background-color:#bf3608;
+	height:171px;
+	width:341px;
+}
+#right {
+    width:33%;
+    float:left;
+    overflow:hidden !important;
+	background-color:#000;
+	height:171px;
+	width:341px;
+}
+#center {
+    float:left;
+    width:33%;
+    text-align:center;
+	background-color:#099feb;
+	height:171px;
+	width:342px;
+}
+
+
+
+#slider{
+	background-color:#6FF;
+	}
+
+.section{
+	margin-top:400px;
+	}
+
+
+#Image10{
+	margin-left:250px;
+	opacity: 0.9;
+}
+
+	
+#b{
+	margin-bottom:32px;
+	opacity: 0.9;
+    display:
+}
+		
+#Image12{
+	margin-left:0px;
+	opacity: 0.9;
+}
+
+h1{
+	color:#fff;
+	font-size:14px;
+	margin-top:14px;
+	margin-bottom:14px;
+	}
+	
+	
+h2{
+	color:#fff;
+	font-size:10px;
+	} 
+	
+p{
+		color:#fff;
+		font-size:12px;
+		margin-bottom:10px;
+		line-height:0.5;
+		}
+		
+#left img{
+			margin-top:30px;
+		}
+		
+#right img{
+			margin-top:30px;
+		}
+		
+#center img{
+			margin-top:30px;
+		}
+		
+.footer ul li{
+		display:inline;
+		text-align:center;
+		margin-top:10px;
+	}
+	
+.footer ul li a{
+		color:#fff;
+		text-decoration:none;
+		font-size:10px;
+		}
+		
+.footer{
+			background-color:#9ea5af;
+			text-align:center;
+			width:1024px;
+			height:48px;
+			padding-top:10px;
+			}
+			
+.footer ul li a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+#line{
+	color:#FFF;
+	font-size:10px;
+	}
+
+
+		
+		

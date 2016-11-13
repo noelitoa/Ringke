@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{max-width:1024px; width:100%; margin:0 auto;}
+
+h1, h2, h3, h4, h5, h6, a, p { font-family: 'arial'; }
+
+header {
+	height:45px;
+	background:#000;
+	width:1024px;
+}
+
+body{
+	background-color:#b4dcd4;
+
+	}
+	
+	
+
+#logo{
+	margin-left:100px;
+	width:25%;
+	float:left;
+	width:1024px;
+	margin-top:10px;	
+	
+		}
+		
+nav{
+	width:75%;
+	float:right;	
+	margin-top:10px;
+			}
+
+nav ul li{
+		list-style:none;
+	display:inline-block;
+	float:right;
+	padding-right:50px;
+	}
+	
+nav ul li a{
+		color:#fff;
+		text-decoration:none;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:10px;
+        padding-right:1px;
+		padding-left:1px;
+		
+		}
+		
+nav ul li a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+.sel {
+color: #d15454;
+}
+
+/* selected link 
+nav ul li a:active {
+    color: blue;
+}
+*/
+
+#con{
+	padding-right:140px;
+	}
+	
+	.content{
+		background-color:#fff;
+		}
+		
+
+	
+#b{
+	margin-bottom:32px;
+	opacity: 0.9;
+    display:
+}
+		
+#link{
+	color:#6d6d6d;
+		font-size:10pt;
+		margin-left:100px;
+		margin-right:66px;
+		line-height:normal;
+		font-family:arial;
+	}
+	
+	#link2{
+	color:#6d6d6d;
+		font-size:10pt;
+		margin-left:112px;
+		margin-right:66px;
+		line-height:normal;
+		font-family:arial;
+		list-style:none;
+	}
+	
+.s{
+	font-weight:bold;
+	}
+	
+h2{
+	color:#fff;
+	font-size:10px;
+	} 
+	
+	h6{
+		font-size:14pt;
+		color:#6d6d6d;
+		margin-left:66px;
+		margin-right:66px;
+		margin-top:20px;
+		}
+	
+p{
+		color:#6d6d6d;
+		font-size:10pt;
+		margin-left:66px;
+		margin-right:66px;
+		line-height:normal;
+		}
+		
+
+		
+.footer ul li{
+		display:inline;
+		text-align:center;
+		margin-top:10px;
+	}
+	
+.footer ul li a{
+		color:#fff;
+		text-decoration:none;
+		font-size:10px;
+		}
+		
+.footer{
+			background-color:#9ea5af;
+			text-align:center;
+			width:1024px;
+			height:48px;
+			padding-top:10px;
+			}
+			
+.footer ul li a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+#line{
+	color:#FFF;
+	font-size:10px;
+	}
+
+
+		
+		

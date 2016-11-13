@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" href="images/ringkeicon.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="slider.css" type="text/css" media="all">
+<title>Ringke</title>
+
+</head><body onload="MM_preloadImages('images/black.png','images/black2.png')">
+
+
+<div class="container">
+	<header>
+		
+        <div id="logo"> <a href="index.html"><img src="images/ringke-logo.png" width="96" height="31" alt="ringkelogo" /></a>
+          <nav>
+        <ul>
+        <li><a id="con" href="contact.html">CONTACT</a></li>
+        <li><a href="http://www.gadgetpinas.ph/ringke">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="sel" href="index.html">HOME</a></li>
+        </ul>
+        </nav>
+        </div>
+        
+</header>
+        
+        
+
+<div id="slider">
+  <a href="#" class="control_next"><img src="images/right.png" width="30" height="66" /></a>
+  <a href="#" class="control_prev"><img src="images/left.png" width="30" height="66" /></a>
+  <ul>
+    <li><img src="images/sliderpic.jpg" width="1024" height="567" /></li>
+    <li><img src="images/banner.jpg" width="1024" height="567" /></li>
+    <li><img src="images/slider3.jpg" width="1024" height="567" /></li>
+  </ul>  
+</div>
+
+<div class="section">
+<a href="http://gadgetpinas.ph/ringke" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','images/black.png',1)"><img src="images/a.png" name="Image10" width="229" height="125" border="0" id="Image10" /></a><img id="b" src="images/d.png" width="54" height="55" /><a href="http://lazada.com.ph/ringke-direct" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/black2.png',1)"><img src="images/b.png" name="Image12" width="234" height="125" border="0" id="Image12" /></a>
+
+<div id="content">
+    
+        <a href="about.html"><div id="left"><img src="images/orangebag.png" width="42" height="37" />
+        <h1>ABOUT</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Sed sodales congue volutpat.</p>
+    </div></a>
+        
+        <a href="#"><div id="center"><img src="images/blueresources.png" width="44" height="39" />
+        <h1>RESOURCES</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Sed sodales congue volutpat.</p>
+    </div></a>
+        
+        <a href="#"><div id="right"><img src="images/faq.png" width="40" height="40" />
+        <h1>FAQS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Sed sodales congue volutpat.</p>
+    </div>    </a>   
+        <br style="clear: left;"/>
+</div>
+
+<div class="footer">
+<ul>
+<li><a href="about.html">About Us</a></li>
+<li id="line">|</li>
+<li><a href="priv&amp;pol.html">Privacy Policy</a></li>
+<li id="line">|</li>
+<li><a href="terms&amp;con.html">Terms & Condition</a></li>
+</ul>
+
+<h2>&copy;2015 Ringke. All Rights Reserved.</h2>
+</div>
+        
+</div>
+       
+</body>
+</html>
+
+<script src="jquery.js"></script>
+<script>
+jQuery(document).ready(function ($) {
+  
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});  
+
+</script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
