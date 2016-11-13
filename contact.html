@@ -47,9 +47,10 @@
 </br></br>
 
 <div class="col-contacts">
-			<form action=""http://www.gadgetpinas.ph/info/contact" enctype="multipart/form-data" method="post">
+			<form name="contact" action="contact" netlify netlify-honeypot="bot-field">
+        <p class="hidden"><label>Bot field: <input name="bot-field"></label></p>
 				<input type="text" name="name" placeholder="First Name" />
-				<input type="text" name="email" placeholder="E-mail Address" />
+				<input type="email" name="email" placeholder="E-mail Address" />
 				<textarea id="message1" name="message" placeholder="Enquiry..."></textarea>
 				<button id="font1">SUBMIT</button>
 			</form>
